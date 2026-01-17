@@ -58,6 +58,18 @@ R minesweeper
 🧱 ⚫ ⚫ ⚫ 1️⃣ 💣 1️⃣ 2️⃣ 💣 2️⃣ 1️⃣ 💣 1️⃣ ⚫ 🧱
 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱
 
+R last-page
+⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛
+⬛ 💡 ⚫ ⚫ ⚫ ⚫ ⚫ 💡 ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ ⬛
+⬛ ⚫ ⚫ ⚫ ⚫ ⚫ 💡 ⚫ 💡 ⚫ ⚫ 💡 ⚫ 💡 ⬛
+⬛ ⚫ ⚫ 💡 ⚫ 💡 ⚫ ⚫ ⚫ 💡 ⚫ ⚫ ⚫ ⚫ ⬛
+⬛ ⚫ ⚫ ⚫ ⚫ ⚫ 💡 ⚫ 💡 ⚫ ⚫ ⚫ ⚫ ⚫ ⬛
+⬛ ⚫ ⚫ ⚫ 💡 ⚫ ⚫ 💡 ⚫ ⚫ ⚫ 💡 ⚫ ⚫ ⬛
+⬛ ⚫ 💡 ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ ⬛
+⬛ ⚫ ⚫ ⚫ ⚫ 💡 ⚫ ⚫ ⚫ 💡 ⚫ ⚫ ⚫ ⚫ ⬛
+⬛ ⚫ ⚫ 💡 ⚫ ⚫ ⚫ ⚫ 💡 ⚫ ⚫ ⚫ 💡 ⚫ ⬛
+⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛
+
 
 T ⬛
 IMAGE floor
@@ -89,9 +101,9 @@ T 🛌
 IMAGE bed
 WALL 1
 A
-SAY i dread of sleep
-SAY but i feel my brain diving deep
-SAY into dark oblivion of night
+SAY with a weird feeling, dark and deep
+SAY i feel my brain diving into sleep
+SAY piercing black oblivion of night
 IF room == 1 JUMP bed1
 IF room == 2 JUMP bed2
 MOVE start 9 6
@@ -106,7 +118,7 @@ T 🚩
 IMAGE floor
 START 1
 A
-SAY everytime I close my eyes
+SAY everytime i close my eyes
 SAY i would follow fireflies
 PLACE ♣️
 
@@ -125,7 +137,7 @@ SAY i push the door
 SAY make a step through the arc
 SAY and im standing in the dark
 SAY and only faint light of firefly
-SAY is my guide
+SAY is my virgil and guide
 
 T D2
 IMAGE floor
@@ -211,11 +223,21 @@ JUMP death
 T D5
 IMAGE firefly
 WALL 1
-
-
-
-
-
+A
+MOVE last-page 7 3
+SAY "and i find it kind of funny
+SAY i find it kind of sad
+SAY the dreams in which im dying
+SAY are the best ive ever had"
+SAY i escape the world of lies
+SAY in my dreams to follow fireflies
+SAY one day i will reach last page
+SAY thats it, time to close the book,
+SAY i will step down from the stage
+SAY and throw back one final look
+SAY what will i see?
+SAY will i see a forest or a tree?
+END
 
 
 
