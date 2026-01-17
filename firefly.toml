@@ -1,0 +1,10 @@
+author_id = "lux"
+app_id = "follow"
+author_name = "Lux"
+app_name = "Follow fireflies"
+lang = "bulb"
+
+[files]
+main = { path = "main.bulb", copy = true }
+atlas = { path = "atlas.png" }
+font = { path = "eg_6x9.fff", url = "https://fonts.fireflyzero.com/fonts/ascii/eg_6x9.fff" }

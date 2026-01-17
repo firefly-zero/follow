@@ -1,0 +1,54 @@
+R start
+🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱
+🧱 ⚪️ ⚪️ ⚪️ ⚪️ ⚪️ ⚪️ ⚪️ ⚪️ ⚪️ ⚪️ ⚪️ ⚪️ ⚪️ 🧱
+🧱 ⚪️ ⚪️ ⚪️ ⚪️ ⚪️ ⚪️ ⚪️ ⚪️ ⚪️ ⚪️ ⚪️ ⚪️ ⚪️ 🧱
+🧱 ⚪️ ⚪️ ⚪️ 🚩 ⚪️ ⚪️ ⚪️ 🐈 ⚪️ ⚪️ ⚪️ ⚪️ ⚪️ 🧱
+🧱 ⚪️ ⚪️ ⚪️ ⚪️ ⚪️ ⚪️ ⚪️ ⚪️ ⚪️ ⚪️ ⚪️ ⚪️ ⚪️ 🧱
+🧱 ⚪️ ⚪️ ⚪️ ⚪️ ⚪️ ⚪️ ⚪️ ⚪️ ⚪️ ⚪️ ⚪️ ⚪️ ⚪️ 🧱
+🧱 ⚪️ ⚪️ ⚪️ 🔑 ⚪️ ⚪️ ⚪️ ⚪️ ⚪️ ⚪️ ⚪️ ⚪️ ⚪️ 🧱
+🧱 ⚪️ ⚪️ ⚪️ ⚪️ ⚪️ ⚪️ ⚪️ ⚪️ ⚪️ ⚪️ ⚪️ ⚪️ ⚪️ 🧱
+🧱 ⚪️ ⚪️ ⚪️ ⚪️ ⚪️ ⚪️ ⚪️ ⚪️ ⚪️ ⚪️ ⚪️ ⚪️ ⚪️ 🧱
+🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱
+
+
+T ⚪️
+IMAGE floor
+
+T 🧱
+IMAGE wall
+WALL 1
+
+T 🚩
+IMAGE floor
+START 1
+
+T 🐈
+IMAGE cat
+WALL 1
+A
+SAY Cat: I'm a cat.
+SAY Yes, I can talk.
+
+T 🔑
+IMAGE key
+A
+SAY You found a key!
+ADD key 1
+PLACE ⚪️
+
+
+I idle
+POS 0 0
+PLAYER 1 idle
+
+I cat
+POS 1 0
+
+I key
+POS 0 1
+
+I wall
+POS 0 2
+
+I floor
+POS 1 2
