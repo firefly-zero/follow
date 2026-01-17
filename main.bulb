@@ -82,6 +82,7 @@ SAY i feel the pain, my body break
 SAY and im suddenly awake
 SAY alone, in empty room
 SAY i dreamed, once again, of doom
+ADD deaths 1
 MOVE bedroom 8 5
 
 T 🛌
@@ -91,7 +92,15 @@ A
 SAY i dread of sleep
 SAY but i feel my brain diving deep
 SAY into dark oblivion of night
+IF room == 1 JUMP bed1
+IF room == 2 JUMP bed2
 MOVE start 9 6
+
+A bed1
+MOVE dark-room 1 4
+
+A bed2
+MOVE minesweeper 1 4
 
 T 🚩
 IMAGE floor
@@ -110,6 +119,7 @@ T D1
 IMAGE door
 WALL 1
 A
+SET room 1
 MOVE dark-room 1 4
 SAY i push the door
 SAY make a step through the arc
@@ -133,6 +143,7 @@ T D4
 IMAGE firefly
 WALL 1
 A
+SET room 2
 MOVE minesweeper 1 4
 SAY another puzzle piece, another room
 SAY i sense danger but also see the light
