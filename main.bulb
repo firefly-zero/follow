@@ -13,12 +13,12 @@ R start
 R bedroom
 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛
 ⬛ ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ ⬛
-⬛ ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ ⬛
-⬛ ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ ⬛
-⬛ ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ ⬛
-⬛ ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ 🛌 ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ ⬛
-⬛ ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ ⬛
-⬛ ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ ⬛
+⬛ ⚫ ⚫ ⚫ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⚫ ⚫ ⚫ ⬛
+⬛ ⚫ ⚫ ⚫ ⬜️ 📖 🛌 ⚫ 📚 📚 ⬜️ ⚫ ⚫ ⚫ ⬛
+⬛ ⚫ ⚫ ⚫ ⬜️ ⚫ ⚫ ⚫ ⚫ ⚫ ⬜️ ⚫ ⚫ ⚫ ⬛
+⬛ ⚫ ⚫ ⚫ ⬜️ ⚫ ⚫ ⚫ ⚫ 🪑 ⬜️ ⚫ ⚫ ⚫ ⬛
+⬛ ⚫ ⚫ ⚫ ⬜️ ⚫ ⚫ ⚫ ⚫ 📝 ⬜️ ⚫ ⚫ ⚫ ⬛
+⬛ ⚫ ⚫ ⚫ ⬜️ 🚪 ⬜️ ⬜️ ⬜️ ⬜️ ⬜️ ⚫ ⚫ ⚫ ⬛
 ⬛ ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ ⬛
 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛
 
@@ -91,11 +91,11 @@ JUMP death
 
 A death
 SAY i feel the pain, my body break
+ADD deaths 1
+MOVE bedroom 6 4
 SAY and im suddenly awake
 SAY alone, in empty room
 SAY i dreamed, once again, of doom
-ADD deaths 1
-MOVE bedroom 8 5
 
 T 🛌
 IMAGE bed
@@ -113,6 +113,51 @@ MOVE dark-room 1 4
 
 A bed2
 MOVE minesweeper 1 4
+
+T 🪑
+IMAGE chair
+
+T 📖
+IMAGE nightstand
+WALL 1
+A
+SAY we tell ourselves that were the future
+SAY we set ourselves aside from nature
+SAY we used to run with the wolfes
+SAY and now our forests live in books
+
+T 📝
+IMAGE table
+WALL 1
+A
+SAY i am writing down all my dreams
+SAY all my hopes and all my fears
+SAY fireflies, dungeons, and empty walls
+SAY trying to find the reason and cause
+
+
+T 📚
+IMAGE bookshelf
+WALL 1
+A
+SAY ive read so many books
+SAY and yet it always looks
+SAY that no matter how much i read
+SAY reality will bleed
+SAY in every dream i ever have
+
+T 🚪
+IMAGE door2
+WALL 1
+A
+SAY in the worst of doom and gloom
+SAY dont ever leave the room
+SAY dont ever make the mistake
+SAY its all plastic and fake
+
+T ⬜️
+IMAGE white-wall
+WALL 1
 
 T 🚩
 IMAGE floor
@@ -292,3 +337,21 @@ POS 2 3
 
 I d8
 POS 3 3
+
+I door2
+POS 4 3
+
+I chair
+POS 0 4
+
+I nightstand
+POS 1 4
+
+I table
+POS 2 4
+
+I bookshelf
+POS 3 4
+
+I white-wall
+POS 4 4
