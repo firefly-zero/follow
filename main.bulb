@@ -46,6 +46,18 @@ D3 ⚫ ⚫ ⚫ ⚫ ⚫ T2 ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ ⚫ 🧱
 🧱 ⚫ ⚫ ⚫ ⚫ ⚫ T2 ⚫ T2 ⚫ ⚫ ⚫ ⚫ ⚫ 🧱
 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱
 
+R minesweeper
+🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱
+🧱 ⚫ ⚫ ⚫ ⚫ 1️⃣ 1️⃣ 1️⃣ ⚫ 1️⃣ 💣 2️⃣ 1️⃣ ⚫ 🧱
+🧱 ⚫ 1️⃣ 1️⃣ 1️⃣ 2️⃣ 💣 2️⃣ 1️⃣ 2️⃣ 2️⃣ 💣 1️⃣ ⚫ 🧱
+🧱 ⚫ 1️⃣ 💣 1️⃣ 2️⃣ 💣 3️⃣ 💣 2️⃣ 2️⃣ 2️⃣ 1️⃣ ⚫ 🧱
+🧱 ⚫ 2️⃣ 2️⃣ 2️⃣ ⚫ 2️⃣ 3️⃣ 2️⃣ 3️⃣ 💣 2️⃣ ⚫ ⚫ 🧱
+🧱 ⚫ 1️⃣ 💣 2️⃣ 2️⃣ 2️⃣ 💣 2️⃣ 3️⃣ 💣 3️⃣ 1️⃣ D5 🧱
+🧱 ⚫ 1️⃣ 2️⃣ 💣 2️⃣ 💣 3️⃣ 💣 3️⃣ 2️⃣ 💣 1️⃣ ⚫ 🧱
+🧱 ⚫ ⚫ 1️⃣ 2️⃣ 3️⃣ 2️⃣ 4️⃣ 💣 3️⃣ 2️⃣ 2️⃣ 2️⃣ ⚫ 🧱
+🧱 ⚫ ⚫ ⚫ 1️⃣ 💣 1️⃣ 2️⃣ 💣 2️⃣ 1️⃣ 💣 1️⃣ ⚫ 🧱
+🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱 🧱
+
 
 T ⬛
 IMAGE floor
@@ -105,7 +117,6 @@ SAY and im standing in the dark
 SAY and only faint light of firefly
 SAY is my guide
 
-
 T D2
 IMAGE floor
 WALL 1
@@ -121,6 +132,11 @@ MOVE dark-room 1 2
 T D4
 IMAGE firefly
 WALL 1
+A
+MOVE minesweeper 1 4
+SAY another puzzle piece, another room
+SAY i sense danger but also see the light
+SAY of my only guide
 
 T T1
 IMAGE floor
@@ -133,6 +149,62 @@ A trap
 A trap
 SAY i step in a trap
 JUMP death
+
+T 1️⃣
+IMAGE floor
+A
+PLACE d1
+
+T d1
+IMAGE d1
+
+T 2️⃣
+IMAGE floor
+A
+PLACE d2
+
+T d2
+IMAGE d2
+
+T 3️⃣
+IMAGE floor
+A
+PLACE d3
+
+T d3
+IMAGE d3
+
+T 4️⃣
+IMAGE floor
+A
+PLACE d4
+
+T d4
+IMAGE d4
+
+T 💣
+IMAGE floor
+A
+PLACE trap
+SAY my foot get tangled
+SAY from hip to ankle
+JUMP death
+
+T trap
+IMAGE trap
+A
+SAY my foot get tangled
+SAY from hip to ankle
+JUMP death
+
+T D5
+IMAGE firefly
+WALL 1
+
+
+
+
+
 
 
 
