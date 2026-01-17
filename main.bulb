@@ -4,7 +4,7 @@ R start
 ♣️ ♣️ ♣️ ♣️ ♣️ ♣️ 💡 💡 ♣️ ♣️ 💡 ♣️ ♣️ ♣️ ♣️
 ♣️ ♣️ ♣️ 🚩 💡 ♣️ ♣️ 💡 ♣️ ♣️ 💡 💡 💡 ♣️ ♣️
 ♣️ ♣️ ♣️ ♣️ 💡 💡 ♣️ 💡 ♣️ ♣️ ♣️ ♣️ 💡 ♣️ ♣️
-♣️ ♣️ ♣️ ♣️ ♣️ 💡 ♣️ 💡 ♣️ D1 ♣️ ♣️ 💡 ♣️ ♣️
+♣️ ♣️ ♣️ ♣️ ♣️ 💡 ♣️ 🪔 ♣️ D1 ♣️ ♣️ 💡 ♣️ ♣️
 ♣️ ♣️ ♣️ ♣️ ♣️ 💡 💡 💡 ♣️ 💡 ♣️ ♣️ 💡 ♣️ ♣️
 ♣️ ♣️ ♣️ ♣️ ♣️ ♣️ ♣️ ♣️ ♣️ 💡 💡 💡 💡 ♣️ ♣️
 ♣️ ♣️ ♣️ ♣️ ♣️ ♣️ ♣️ ♣️ ♣️ ♣️ ♣️ ♣️ ♣️ ♣️ ♣️
@@ -106,12 +106,23 @@ SAY i feel my brain diving into sleep
 SAY piercing black oblivion of night
 IF room == 1 JUMP bed1
 IF room == 2 JUMP bed2
-MOVE start 9 6
+IF room == 3 JUMP bed3
+MOVE start 3 3
+PLACE 💡 4 3
+PLACE 💡 4 4
+PLACE 💡 5 4
+PLACE 💡 5 5
+PLACE 💡 5 6
+PLACE 💡 6 6
+PLACE 💡 7 6
 
 A bed1
-MOVE dark-room 1 4
+MOVE start 9 6
 
 A bed2
+MOVE dark-room 1 4
+
+A bed3
 MOVE minesweeper 1 4
 
 T 🪑
@@ -172,11 +183,17 @@ IMAGE firefly
 A
 PLACE ♣️
 
+T 🪔
+IMAGE firefly
+A
+SET room 1
+PLACE ♣️
+
 T D1
 IMAGE door
 WALL 1
 A
-SET room 1
+SET room 2
 MOVE dark-room 1 4
 SAY i push the door
 SAY make a step through the arc
@@ -200,7 +217,7 @@ T D4
 IMAGE firefly
 WALL 1
 A
-SET room 2
+SET room 3
 MOVE minesweeper 1 4
 SAY another puzzle piece, another room
 SAY i sense danger but also see the light
